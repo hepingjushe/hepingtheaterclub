@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heping Theater Club | 和平剧社</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"PingFang SC","Noto Sans SC",Arial,sans-serif;background:#0b0b10;color:#f3f3f3}
+    .wrap{max-width:980px;margin:0 auto;padding:56px 20px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:700;letter-spacing:.5px}
+    .nav a{color:#f3f3f3;text-decoration:none;opacity:.85;margin-left:14px}
+    .nav a:hover{opacity:1}
+    .hero{margin-top:64px}
+    h1{font-size:44px;line-height:1.1;margin:0 0 16px}
+    p{font-size:18px;line-height:1.7;opacity:.9;margin:0 0 22px}
+    .card{margin-top:28px;padding:18px 18px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.04)}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;background:#ffffff;color:#0b0b10;text-decoration:none;font-weight:650;margin-right:10px}
+    .btn.secondary{background:transparent;color:#f3f3f3;border:1px solid rgba(255,255,255,.22)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .mini{padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03)}
+    footer{margin-top:56px;opacity:.7;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Heping Theater Club · 和平剧社</div>
+      <div class="nav">
+        <a href="#shows">Productions</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>和平剧社 2026 春季音乐剧《简爱》</h1>
+      <p>Indiana University Bloomington 学生剧社。我们制作双语戏剧与音乐剧，欢迎演员、乐手、舞美、宣传与制作加入。</p>
+
+      <a class="btn" href="#" target="_blank" rel="noreferrer">Tickets / 购票链接（之后再填）</a>
+      <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Instagram / 小红书（之后再填）</a>
+
+      <div class="card" id="shows">
+        <strong>Upcoming · 2026 Spring</strong>
+        <div class="grid">
+          <div class="mini">
+            <div style="font-weight:700">Jane Eyre · 简爱</div>
+            <div style="opacity:.85;margin-top:6px">和平剧社 2026 春季音乐剧</div>
+            <div style="opacity:.75;margin-top:6px">Casting & crew recruiting now</div>
+          </div>
+          <div class="mini">
+            <div style="font-weight:700">Our Jing Ke · 我们的荆轲</div>
+            <div style="opacity:.85;margin-top:6px">Bilingual stage production</div>
+            <div style="opacity:.75;margin-top:6px">Photos / archive coming soon</div>
+          </div>
+          <div class="mini">
+            <div style="font-weight:700">The Magic Lotus Lantern</div>
+            <div style="opacity:.85;margin-top:6px">Chinese musical project</div>
+            <div style="opacity:.75;margin-top:6px">Jacobs collaboration</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="join">
+        <strong>Join · 加入我们</strong>
+        <p style="margin-top:10px">我们欢迎：演员、导演/助导、舞台监督、服化道、灯光音响、视频摄影、平面设计、运营宣传、乐队与作曲。</p>
+        <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Join Form / 报名表（之后再填）</a>
+      </div>
+
+      <div class="card" id="contact">
+        <strong>Contact · 联系方式</strong>
+        <p style="margin-top:10px">Email：<span style="opacity:.9">hepingtheaterclub@xxx.com</span>（之后改成真实邮箱）</p>
+      </div>
+
+      <footer>© <span id="y"></span> Heping Theater Club. Built with GitHub Pages.</footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
