@@ -28,15 +28,28 @@
       border-bottom: 1px solid #e5e5e5;
     }
 
-    .brand {
+    brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
       font-size: 14px;
       line-height: 1.5;
       letter-spacing: 0.04em;
     }
-
-    .brand strong {
+    
+    .brand img {
+      height: 28px;
+      width: auto;
+      opacity: 0.9;
+    }
+    
+    .brand-text strong {
       display: block;
       font-weight: 600;
+    }
+    
+    .brand-text span {
+      display: block;
     }
 
     .menu {
@@ -107,11 +120,11 @@
       <img src="assets/logo.png" alt="Heping Theater Logo" />
       <div class="brand-text">
         <strong>印第安纳大学和平剧社</strong>
-        <strong>Heping Chinese Theater Club 
-        <strong>at Indiana University Bloomington</strong>
+        <span>Heping Chinese Theater Club</span>
+        <span>at Indiana University Bloomington</span>
       </div>
     </div>
-
+  
     <a class="menu" href="#">MENU</a>
   </header>
 
